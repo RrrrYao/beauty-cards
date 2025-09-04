@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100%留客卡 - 超值回馈</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 450px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .icon {
+            font-size: 60px;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .price-box {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        .original { text-decoration: line-through; opacity: 0.7; }
+        .current { font-size: 32px; font-weight: bold; }
+        .benefit {
+            background: #f0f0ff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            border-left: 4px solid #667eea;
+        }
+        .benefit i {
+            color: #667eea;
+            margin-right: 10px;
+        }
+        .cta {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s;
+        }
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <i class="fas fa-gem icon"></i>
+        <h1>100%留客卡</h1>
+        
+        <div class="price-box">
+            <div class="original">原价：7940元</div>
+            <div class="current">仅需 ¥980</div>
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-money-bill-wave"></i>
+            <strong>福利1:</strong> 赠送980元现金卡一张
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-tint"></i>
+            <strong>福利2:</strong> 赠送10次清洁补水 <span style="color: #667eea;">价值：2980元</span>
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-spa"></i>
+            <strong>福利3:</strong> 赠送大白肌10次 <span style="color: #667eea;">价值：3980元</span>
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-undo"></i>
+            <strong>福利4:</strong> 推3返1（免单名额一个）
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-users-cog"></i>
+            <strong>福利5:</strong> 团队名额一位（分享团员50% 团长50%）
+        </div>
+        
+        <button class="cta">立即抢购</button>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://www.soundjay.com/misc/sounds/magic-chime-02.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

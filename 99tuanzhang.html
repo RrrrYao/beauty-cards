@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99团长卡 - 限时福利</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 400px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,154,158,0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .icon {
+            font-size: 60px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        .price {
+            font-size: 36px;
+            color: #ff6b6b;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .benefit {
+            background: #fff5f5;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            border-left: 4px solid #ff6b6b;
+        }
+        .benefit i {
+            color: #ff6b6b;
+            margin-right: 10px;
+        }
+        .cta {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: transform 0.3s;
+        }
+        .cta:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <i class="fas fa-crown icon"></i>
+        <h1>99团长卡</h1>
+        <div class="price">仅需 ¥99</div>
+        
+        <div class="benefit">
+            <i class="fas fa-spa"></i>
+            <strong>福利1:</strong> 3次大白肌 <span style="color: #999;">原价：1194元</span>
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-tint"></i>
+            <strong>福利2:</strong> 2次清洁补水 <span style="color: #999;">原价：596元</span>
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-users"></i>
+            <strong>福利3:</strong> 团长名额一个
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-gift"></i>
+            <strong>福利4:</strong> 分享一位99得50元
+        </div>
+        
+        <div class="benefit">
+            <i class="fas fa-network-wired"></i>
+            <strong>福利5:</strong> 团队裂变得50元
+        </div>
+        
+        <button class="cta" onclick="alert('请联系客服开通')">立即开通</button>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+</body>
+</html>
